@@ -1,0 +1,22 @@
+// actions/actions.js
+// actions/actions.js
+export const setProducts = (response) => ({
+    type: 'SET_PRODUCTS',
+    payload: response && response.products ? response.products : [],
+  });
+  
+  
+  export const addToCart = (product) => ({
+    type: 'ADD_TO_CART',
+    payload: product,
+  });
+  
+  export const removeFromCart = (productId) => ({
+    type: 'REMOVE_FROM_CART',
+    payload: productId,
+  });
+  
+  export const clearCart = () => ({
+    type: 'CLEAR_CART',
+  });
+  

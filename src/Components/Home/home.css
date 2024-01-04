@@ -1,0 +1,51 @@
+/* Add this to your styles or create a separate stylesheet */
+.product-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .product-card {
+    border: 1px solid #ccc;
+    
+    
+    text-align: left ;
+  }
+  
+  .product-card img {
+    width: 100%; /* Set the width to 100% of the container */
+    height: 150px; /* Set the fixed height for all cards */
+    object-fit: contain; /* Maintain the aspect ratio and cover the container */
+    border-bottom: 1px solid #eee; /* Add a border to separate image from other content */
+  }
+  .product-card div{
+    margin-bottom: 12px;
+  }
+  h1{
+text-align: center;
+  }
+  
+
+  .product-card  button{
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 12px;
+  }
+
+  @media (max-width: 768px) {
+    .product-container{
+        width:300px
+    }
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+      }  
+}
+

@@ -1,0 +1,27 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 12px;
+    font-size: 24px;
+
+}
+
+
+
+.navbar>div:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+@media (max-width: 768px) {
+    .navbar>div:first-child{
+ display: none;
+    }
+    .navbar>div:last-child{
+    align-items: flex-start;
+    }
+}
